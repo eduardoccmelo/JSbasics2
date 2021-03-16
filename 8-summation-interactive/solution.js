@@ -19,3 +19,4 @@ function calculateSummation(numbers) {
 }
 
 alert(`Your summation is: ${calculateSummation(numbers)}`);
+console.log(`Your summation is: ${calculateSummation(numbers)}`);
