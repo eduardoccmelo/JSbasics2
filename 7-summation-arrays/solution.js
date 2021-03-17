@@ -1,6 +1,5 @@
 let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let array2 = [1, 2];
-let array3 = [];
+let array2 = [];
 
 function calculateSummation(arr) {
   let total = 0;
@@ -10,6 +9,5 @@ function calculateSummation(arr) {
   return total;
 }
 
-console.log(calculateSummation(array1));
-console.log(calculateSummation(array2));
-console.log(calculateSummation(array3));
+alert(`Your summation is: ${calculateSummation(array1)}`);
+alert(`Your summation is: ${calculateSummation(array2)}`);

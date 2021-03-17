@@ -1,4 +1,14 @@
-let alumniList = [
+function logClass(alumniList) {
+  if (alumniList.length === 0) {
+    console.log("This array is empty");
+  } else {
+    for (let i = 0; i < alumniList.length; i++) {
+      console.log(alumniList[i]);
+    }
+  }
+}
+
+let students = logClass([
   "Namir",
   "Marwin",
   "Martin",
@@ -15,9 +25,11 @@ let alumniList = [
   "Sören",
   "Manuel",
   "Phillip",
-];
+]);
 
-let germans = [
+let australians = logClass([]);
+
+let germans = logClass([
   "Marwin",
   "Shari",
   "Alex",
@@ -29,23 +41,8 @@ let germans = [
   "Sören",
   "Manuel",
   "Phillip",
-];
+]);
 
-let brazilians = ["Eduardo"];
+let russians = logClass([]);
 
-let australians = [];
-
-function logClass(arr) {
-  if (arr.length === 0) {
-    console.log("This array is empty");
-  } else {
-    for (let i = 0; i < arr.length; i++) {
-      console.log(`#${i + 1} ${arr[i]}`);
-    }
-  }
-}
-
-console.log(logClass(alumniList));
-console.log(logClass(germans));
-console.log(logClass(brazilians));
-console.log(logClass(australians));
+let brazilians = logClass(["Eduardo"]);

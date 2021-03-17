@@ -10,13 +10,18 @@ while (intro !== false) {
   }
 }
 
-function calculateSummation(numbers) {
+function calculateSummation(sum) {
   let total = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    total += numbers[i];
+  for (let i = 0; i < sum.length; i++) {
+    total += sum[i];
   }
   return total;
 }
 
-alert(`Your summation is: ${calculateSummation(numbers)}`);
-console.log(`Your summation is: ${calculateSummation(numbers)}`);
+if (numbers.length !== 0) {
+  alert(`Your summation is: ${calculateSummation(numbers)}`);
+  console.log(`Your summation is: ${calculateSummation(numbers)}`);
+} else {
+  alert("You don't have any number for the summation");
+  console.log("You don't have any number for the summation");
+}
